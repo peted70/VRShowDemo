@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MixedRealityToolkit.UX.BoundingBoxes;
+using UnityEngine;
 
 public class AntScript : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class AntScript : MonoBehaviour
     public void Run()
     {
         anim.SetTrigger("Run");
+        gameObject.AddComponent<Rigidbody>();
         _isRunning = true;
     }
 
@@ -21,7 +23,8 @@ public class AntScript : MonoBehaviour
     {
         if (_isRunning)
         {
-            gameObject.transform.Rotate(new Vector3(0.0f, Random.Range(-45.0f, 45.0f), 0.0f));
+            Debug.Log("ant is rotating");
+            gameObject.transform.Rotate(new Vector3(0.0f, Random.Range(-120.0f, 120.0f), 0.0f));
         }
     }
 
@@ -30,8 +33,9 @@ public class AntScript : MonoBehaviour
     {
         if (_isRunning)
         {
+            Debug.Log("ant is running");
             // rotate at random but keep the same general direction?
-            transform.localPosition += transform.forward * Time.deltaTime * 6f;
+            transform.localPosition += transform.forward * Time.deltaTime * .5f;
         }
     }
 }

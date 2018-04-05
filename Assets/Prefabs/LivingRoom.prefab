@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 4535993340411360}
   - component: {fileID: 33363020198889274}
   - component: {fileID: 23642049412496276}
+  - component: {fileID: 64948026383847390}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: Untagged
@@ -523,6 +524,20 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: c36afd19bbe1ff9449df5e3d815ec937, type: 3}
+--- !u!64 &64948026383847390
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1652336261859038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: c36afd19bbe1ff9449df5e3d815ec937, type: 3}
 --- !u!95 &95598406683651360
 Animator:
   serializedVersion: 3
